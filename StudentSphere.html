@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentSphere</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Student Website</h1>
+        <p>Learn more about me and my education.</p>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#education">Education</a> |
+            <a href="#hobbies">Hobbies</a> |
+            <a href="#registration">Registration</a> |
+            <a href="#contact">Contact</a> 
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section id="home">
+            <h2>My Student Profile</h2>
+            <img src="" alt="Student profile photo" height="200" width="300">
+            <article>
+                <p>Hello! My name is Rahul.</p>
+                <p>I am a student interested in technology and web development.</p>
+                <p>Visit <a href="https://google.com" target="_blank">Google</a></p>
+            </article>
+        </section>
+        <hr>
+        <section id="about">
+            <h2>About Me</h2>
+            <article>
+                <h3>My Introduction</h3>
+                <p>I am learning HTML to create a website. My goal is to become a software developer.</p>
+                <p>I enjoy learning HTML, programming and <u>technology</u></p>
+                <p>My favourite formula is H<sub>2</sub>O.</p>
+                <p>Mathematics example: 10<sup>2</sup>=100.</p>
+            </article>
+        </section>
+        <hr>
+        <section id="education">
+            <h2>My Education</h2>
+            <table border="2">
+                <caption>Education Details</caption>
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Board</th>
+                        <th>Year</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                    <td>10th</td>
+                    <td>State Board</td>
+                    <td>2022</td>
+                    <td>80%</td>
+                   </tr> 
+                   <tr>
+                    <td>12th</td>
+                    <td>State Board</td>
+                    <td>2024</td>
+                    <td>75%</td>
+                   </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Current Course</td>
+                        <td>2026</td>
+                        <td>BSc IT</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <hr>
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <h3>Favourite Activities</h3>
+            <ul>
+                <li>Learning programming</li>
+                <li>Reading books</li>
+                <li>Playing Cricket</li>
+                <li>Listening to music</li>
+            </ul>
+            <h3>My Daily Routine</h3>
+            <ol>
+                <li>Wake up early</li>
+                <li>Study HTML</li>
+                <li>Practice coding</li>
+                <li>Complete assignments</li>
+            </ol>
+        </section>
+        <hr>
+        <section>
+            <h2>My Learning Video</h2>
+            <video src="myVideo.mp4" width="400" height="200" controls autoplay muted></video>
+        </section>
+        <section id="registration">
+            <form action="">
+                <h2>Student Registration Form</h2>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="full_name">Full Name:</label><br>
+                    <input type="text" name="full_name" id="full_name" placeholder="Enter your name" required minlength="2" maxlength="40"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" name="password" placeholder="Enter your password" id="password" minlength="8" maxlength="20" required><br><br>
+                    <label for="date_of_birth">Date of Birth:</label><br>
+                    <input type="date" name="date_of_birth" id="date_of_birth" required><br><br>
+                    <label for="gender">Gender:</label><br>
+                    <input type="radio" name="gender" id="male" value="male"> Male 
+                    <input type="radio" name="gender" id="female" value="female">Female 
+                    <input type="radio" name="gender" id="others" value="others"> Others <br><br>
+                    <label for="phone_number">Phone Number:</label><br>
+                    <input type="tel" name="phone_number" pattern="[0-9]{10}" placeholder="Enter your phone number" id="phone_number"  maxlength="10" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Course Information</legend>
+                    <label for="Course"> Select Course:</label><br>
+                    <select name="Course" id="Course" required>
+                        <option value="">Choose a course</option>
+                        <option value="bsc_it">BSc IT</option>
+                        <option value="bca">BCA</option>
+                        <option value="bcom">BCom</option>
+                        <option value="bsc">BSc</option>
+                    </select><br><br>
+                    <label for="skills">Skills:</label><br>
+                    <input type="checkbox" name="skills" id="html" value="html">HTML
+                    <input type="checkbox" name="skills" id="css" value="css">CSS
+                    <input type="checkbox" name="skills" id="JavaScript" value="javascript">JavaScript <br><br>
+                    <label for="yourself">Tell us about yourself:</label><br>
+                    <textarea name="yourself" id="yourself" required placeholder="Write something about your self" cols="30" rows="5"></textarea><br><br>
+                    <label for="upload_profile_photo">Upload Profile Photo:</label><br>
+                    <input type="file" name="upload_profile_photo" id="upload_profile_photo" required><br><br>
+                </fieldset>
+                  <input type="checkbox" name="terms" required id="terms">I agree to the terms and conditions.  <br>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear Form">          
+            </form>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            Email:<a href="mailto:student@example.com">student@example.com</a><br><br>
+            Phone:9876543210 <br><br>
+            <a href="#home">Back to Top</a>
+        </section>
+        <hr>
+        <section>
+            <p>Copyright &copy; 2026 Student Website</p>
+            <p>Created using HTML.</p>
+        </section>
+    </footer>
+</body>
+</html>
